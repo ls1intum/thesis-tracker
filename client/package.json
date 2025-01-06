@@ -38,7 +38,7 @@
     "@tiptap/extension-highlight": "2.10.4",
     "@tiptap/extension-subscript": "2.10.4",
     "@tiptap/extension-superscript": "2.10.4",
-    "@tiptap/extension-text-align": "2.10.4",
+    "@tiptap/extension-text-align": "2.11.0",
     "@tiptap/extension-underline": "2.10.4",
     "@tiptap/starter-kit": "2.10.4",
     "i18n-iso-countries": "7.13.0",
