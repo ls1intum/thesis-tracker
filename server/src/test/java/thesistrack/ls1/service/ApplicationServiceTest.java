@@ -1,4 +1,4 @@
-package thesistrack.ls1.service;
+package thesismanagement.ls1.service;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -8,17 +8,17 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.PageRequest;
-import thesistrack.ls1.constants.ApplicationRejectReason;
-import thesistrack.ls1.constants.ApplicationReviewReason;
-import thesistrack.ls1.constants.ApplicationState;
-import thesistrack.ls1.entity.*;
-import thesistrack.ls1.entity.key.ApplicationReviewerId;
-import thesistrack.ls1.exception.request.ResourceInvalidParametersException;
-import thesistrack.ls1.exception.request.ResourceNotFoundException;
-import thesistrack.ls1.mock.EntityMockFactory;
-import thesistrack.ls1.repository.ApplicationRepository;
-import thesistrack.ls1.repository.ApplicationReviewerRepository;
-import thesistrack.ls1.repository.TopicRepository;
+import thesismanagement.ls1.constants.ApplicationRejectReason;
+import thesismanagement.ls1.constants.ApplicationReviewReason;
+import thesismanagement.ls1.constants.ApplicationState;
+import thesismanagement.ls1.entity.*;
+import thesismanagement.ls1.entity.key.ApplicationReviewerId;
+import thesismanagement.ls1.exception.request.ResourceInvalidParametersException;
+import thesismanagement.ls1.exception.request.ResourceNotFoundException;
+import thesismanagement.ls1.mock.EntityMockFactory;
+import thesismanagement.ls1.repository.ApplicationRepository;
+import thesismanagement.ls1.repository.ApplicationReviewerRepository;
+import thesismanagement.ls1.repository.TopicRepository;
 
 import java.time.Instant;
 import java.util.*;

@@ -1,4 +1,4 @@
-package thesistrack.ls1.entity;
+package thesismanagement.ls1.entity;
 
 import jakarta.mail.internet.AddressException;
 import jakarta.mail.internet.InternetAddress;
@@ -6,7 +6,7 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.Setter;
-import thesistrack.ls1.entity.key.ThesisPresentationInviteId;
+import thesismanagement.ls1.entity.key.ThesisPresentationInviteId;
 
 import java.time.Instant;
 

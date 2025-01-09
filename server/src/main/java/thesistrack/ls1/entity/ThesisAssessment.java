@@ -1,4 +1,4 @@
-package thesistrack.ls1.entity;
+package thesismanagement.ls1.entity;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;

@@ -1,4 +1,4 @@
-package thesistrack.ls1.service;
+package thesismanagement.ls1.service;
 
 import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.io.IOUtils;
@@ -8,8 +8,8 @@ import org.springframework.core.io.FileSystemResource;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 import org.springframework.web.multipart.MultipartFile;
-import thesistrack.ls1.constants.UploadFileType;
-import thesistrack.ls1.exception.UploadException;
+import thesismanagement.ls1.constants.UploadFileType;
+import thesismanagement.ls1.exception.UploadException;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -29,7 +29,7 @@ public class UploadService {
     private final Path rootLocation;
 
     @Autowired
-    public UploadService(@Value("${thesis-track.storage.upload-location}") String uploadLocation) {
+    public UploadService(@Value("${thesis-management.storage.upload-location}") String uploadLocation) {
         this.rootLocation = Paths.get(uploadLocation);
 
         File uploadDirectory = rootLocation.toFile();

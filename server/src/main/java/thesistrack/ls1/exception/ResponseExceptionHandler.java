@@ -1,4 +1,4 @@
-package thesistrack.ls1.exception;
+package thesismanagement.ls1.exception;
 
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -9,11 +9,11 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
-import thesistrack.ls1.dto.ErrorDto;
-import thesistrack.ls1.exception.request.AccessDeniedException;
-import thesistrack.ls1.exception.request.ResourceAlreadyExistsException;
-import thesistrack.ls1.exception.request.ResourceInvalidParametersException;
-import thesistrack.ls1.exception.request.ResourceNotFoundException;
+import thesismanagement.ls1.dto.ErrorDto;
+import thesismanagement.ls1.exception.request.AccessDeniedException;
+import thesismanagement.ls1.exception.request.ResourceAlreadyExistsException;
+import thesismanagement.ls1.exception.request.ResourceInvalidParametersException;
+import thesismanagement.ls1.exception.request.ResourceNotFoundException;
 
 import java.text.ParseException;
 

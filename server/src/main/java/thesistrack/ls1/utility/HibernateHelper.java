@@ -1,4 +1,4 @@
-package thesistrack.ls1.utility;
+package thesismanagement.ls1.utility;
 
 import jakarta.persistence.Column;
 

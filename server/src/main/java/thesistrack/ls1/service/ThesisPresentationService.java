@@ -1,4 +1,4 @@
-package thesistrack.ls1.service;
+package thesismanagement.ls1.service;
 
 import jakarta.mail.internet.InternetAddress;
 import net.fortuna.ical4j.model.Calendar;
@@ -13,18 +13,18 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import thesistrack.ls1.constants.ThesisPresentationState;
-import thesistrack.ls1.constants.ThesisPresentationType;
-import thesistrack.ls1.constants.ThesisPresentationVisibility;
-import thesistrack.ls1.entity.*;
-import thesistrack.ls1.entity.key.ThesisPresentationInviteId;
-import thesistrack.ls1.exception.request.AccessDeniedException;
-import thesistrack.ls1.exception.request.ResourceInvalidParametersException;
-import thesistrack.ls1.exception.request.ResourceNotFoundException;
-import thesistrack.ls1.repository.ThesisPresentationInviteRepository;
-import thesistrack.ls1.repository.ThesisPresentationRepository;
-import thesistrack.ls1.repository.ThesisRepository;
-import thesistrack.ls1.repository.UserRepository;
+import thesismanagement.ls1.constants.ThesisPresentationState;
+import thesismanagement.ls1.constants.ThesisPresentationType;
+import thesismanagement.ls1.constants.ThesisPresentationVisibility;
+import thesismanagement.ls1.entity.*;
+import thesismanagement.ls1.entity.key.ThesisPresentationInviteId;
+import thesismanagement.ls1.exception.request.AccessDeniedException;
+import thesismanagement.ls1.exception.request.ResourceInvalidParametersException;
+import thesismanagement.ls1.exception.request.ResourceNotFoundException;
+import thesismanagement.ls1.repository.ThesisPresentationInviteRepository;
+import thesismanagement.ls1.repository.ThesisPresentationRepository;
+import thesismanagement.ls1.repository.ThesisRepository;
+import thesismanagement.ls1.repository.UserRepository;
 
 import java.time.Instant;
 import java.time.temporal.ChronoUnit;
@@ -48,8 +48,8 @@ public class ThesisPresentationService {
             ThesisRepository thesisRepository,
             MailingService mailingService,
             ThesisPresentationRepository thesisPresentationRepository,
-            @Value("${thesis-track.client.host}") String clientHost,
-            @Value("${thesis-track.mail.sender}") InternetAddress applicationMail,
+            @Value("${thesis-management.client.host}") String clientHost,
+            @Value("${thesis-management.mail.sender}") InternetAddress applicationMail,
             UserRepository userRepository, ThesisPresentationInviteRepository thesisPresentationInviteRepository) {
         this.calendarService = calendarService;
         this.thesisRepository = thesisRepository;
@@ -298,7 +298,7 @@ public class ThesisPresentationService {
     private Calendar createEmptyCalendar() {
         Calendar calendar = new Calendar();
 
-        calendar.add(new ProdId("-//Thesis Track//Thesis Presentations//EN"));
+        calendar.add(new ProdId("-//Thesis Management//Thesis Presentations//EN"));
         calendar.add(ImmutableVersion.VERSION_2_0);
         calendar.add(ImmutableCalScale.GREGORIAN);
 

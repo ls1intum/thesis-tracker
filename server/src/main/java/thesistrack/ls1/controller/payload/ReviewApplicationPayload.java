@@ -1,6 +1,6 @@
-package thesistrack.ls1.controller.payload;
+package thesismanagement.ls1.controller.payload;
 
-import thesistrack.ls1.constants.ApplicationReviewReason;
+import thesismanagement.ls1.constants.ApplicationReviewReason;
 
 public record ReviewApplicationPayload(
         ApplicationReviewReason reason

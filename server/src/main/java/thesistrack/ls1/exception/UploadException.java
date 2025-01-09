@@ -1,4 +1,4 @@
-package thesistrack.ls1.exception;
+package thesismanagement.ls1.exception;
 
 public class UploadException extends RuntimeException {
     public UploadException(String message) {

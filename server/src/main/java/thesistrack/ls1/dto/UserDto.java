@@ -1,7 +1,7 @@
-package thesistrack.ls1.dto;
+package thesismanagement.ls1.dto;
 
 import jakarta.mail.internet.InternetAddress;
-import thesistrack.ls1.entity.User;
+import thesismanagement.ls1.entity.User;
 
 import java.time.Instant;
 import java.util.*;

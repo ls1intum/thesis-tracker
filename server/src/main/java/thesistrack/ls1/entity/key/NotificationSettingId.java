@@ -1,4 +1,4 @@
-package thesistrack.ls1.entity.key;
+package thesismanagement.ls1.entity.key;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;

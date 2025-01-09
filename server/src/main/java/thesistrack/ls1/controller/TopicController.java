@@ -1,4 +1,4 @@
-package thesistrack.ls1.controller;
+package thesismanagement.ls1.controller;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,17 +7,17 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.oauth2.server.resource.authentication.JwtAuthenticationToken;
 import org.springframework.web.bind.annotation.*;
-import thesistrack.ls1.constants.StringLimits;
-import thesistrack.ls1.controller.payload.CloseTopicPayload;
-import thesistrack.ls1.controller.payload.ReplaceTopicPayload;
-import thesistrack.ls1.dto.PaginationDto;
-import thesistrack.ls1.dto.TopicDto;
-import thesistrack.ls1.entity.Topic;
-import thesistrack.ls1.entity.User;
-import thesistrack.ls1.service.ApplicationService;
-import thesistrack.ls1.service.AuthenticationService;
-import thesistrack.ls1.service.TopicService;
-import thesistrack.ls1.utility.RequestValidator;
+import thesismanagement.ls1.constants.StringLimits;
+import thesismanagement.ls1.controller.payload.CloseTopicPayload;
+import thesismanagement.ls1.controller.payload.ReplaceTopicPayload;
+import thesismanagement.ls1.dto.PaginationDto;
+import thesismanagement.ls1.dto.TopicDto;
+import thesismanagement.ls1.entity.Topic;
+import thesismanagement.ls1.entity.User;
+import thesismanagement.ls1.service.ApplicationService;
+import thesismanagement.ls1.service.AuthenticationService;
+import thesismanagement.ls1.service.TopicService;
+import thesismanagement.ls1.utility.RequestValidator;
 
 import java.util.UUID;
 

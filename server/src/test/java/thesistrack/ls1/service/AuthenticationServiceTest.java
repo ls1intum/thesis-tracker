@@ -1,4 +1,4 @@
-package thesistrack.ls1.service;
+package thesismanagement.ls1.service;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -7,14 +7,14 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.mock.web.MockMultipartFile;
 import org.springframework.security.oauth2.server.resource.authentication.JwtAuthenticationToken;
-import thesistrack.ls1.constants.UploadFileType;
-import thesistrack.ls1.entity.NotificationSetting;
-import thesistrack.ls1.entity.User;
-import thesistrack.ls1.entity.key.NotificationSettingId;
-import thesistrack.ls1.mock.EntityMockFactory;
-import thesistrack.ls1.repository.NotificationSettingRepository;
-import thesistrack.ls1.repository.UserGroupRepository;
-import thesistrack.ls1.repository.UserRepository;
+import thesismanagement.ls1.constants.UploadFileType;
+import thesismanagement.ls1.entity.NotificationSetting;
+import thesismanagement.ls1.entity.User;
+import thesismanagement.ls1.entity.key.NotificationSettingId;
+import thesismanagement.ls1.mock.EntityMockFactory;
+import thesismanagement.ls1.repository.NotificationSettingRepository;
+import thesismanagement.ls1.repository.UserGroupRepository;
+import thesismanagement.ls1.repository.UserRepository;
 
 import java.time.Instant;
 import java.util.*;
@@ -81,7 +81,7 @@ class AuthenticationServiceTest {
                 Instant.now(),
                 "Java",
                 "AI",
-                "Thesis Track",
+                "Thesis Management",
                 Map.of("key", "value"),
                 avatar,
                 null,

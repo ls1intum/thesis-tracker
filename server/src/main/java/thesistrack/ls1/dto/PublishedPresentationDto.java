@@ -1,9 +1,9 @@
-package thesistrack.ls1.dto;
+package thesismanagement.ls1.dto;
 
-import thesistrack.ls1.constants.ThesisPresentationState;
-import thesistrack.ls1.constants.ThesisPresentationType;
-import thesistrack.ls1.constants.ThesisPresentationVisibility;
-import thesistrack.ls1.entity.ThesisPresentation;
+import thesismanagement.ls1.constants.ThesisPresentationState;
+import thesismanagement.ls1.constants.ThesisPresentationType;
+import thesismanagement.ls1.constants.ThesisPresentationVisibility;
+import thesismanagement.ls1.entity.ThesisPresentation;
 
 import java.time.Instant;
 import java.util.UUID;

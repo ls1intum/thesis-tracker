@@ -8,9 +8,9 @@ plugins {
 	id "com.github.ben-manes.versions" version "0.51.0"
 }
 
-group = "thesis-track.ls1"
+group = "thesis-management.ls1"
 version = "3.0.4"
-description = "Thesis Track"
+description = "Thesis Management"
 
 java {
 	sourceCompatibility = JavaVersion.VERSION_21

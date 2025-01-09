@@ -1,4 +1,4 @@
-package thesistrack.ls1.controller;
+package thesismanagement.ls1.controller;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
@@ -9,11 +9,11 @@ import org.springframework.test.context.DynamicPropertySource;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 import org.testcontainers.junit.jupiter.Testcontainers;
-import thesistrack.ls1.constants.ApplicationState;
-import thesistrack.ls1.controller.payload.AcceptApplicationPayload;
-import thesistrack.ls1.controller.payload.CreateApplicationPayload;
-import thesistrack.ls1.controller.payload.UpdateApplicationCommentPayload;
-import thesistrack.ls1.mock.BaseIntegrationTest;
+import thesismanagement.ls1.constants.ApplicationState;
+import thesismanagement.ls1.controller.payload.AcceptApplicationPayload;
+import thesismanagement.ls1.controller.payload.CreateApplicationPayload;
+import thesismanagement.ls1.controller.payload.UpdateApplicationCommentPayload;
+import thesismanagement.ls1.mock.BaseIntegrationTest;
 
 import java.time.Instant;
 import java.util.List;

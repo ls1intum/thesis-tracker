@@ -1,4 +1,4 @@
-package thesistrack.ls1.utility;
+package thesismanagement.ls1.utility;
 
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.stereotype.Component;

@@ -1,6 +1,6 @@
-package thesistrack.ls1.dto;
+package thesismanagement.ls1.dto;
 
-import thesistrack.ls1.entity.NotificationSetting;
+import thesismanagement.ls1.entity.NotificationSetting;
 
 public record NotificationSettingDto(
         String name,

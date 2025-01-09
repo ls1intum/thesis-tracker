@@ -28,7 +28,7 @@ const Footer = (props: IFooterProps) => {
             {GLOBAL_CONFIG.chair_name}
           </Anchor>
           <Anchor
-            href={`https://github.com/ls1intum/thesis-track/releases`}
+            href={`https://github.com/ls1intum/thesis-management/releases`}
             target='_blank'
             c='dimmed'
           >

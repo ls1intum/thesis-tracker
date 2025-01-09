@@ -1,4 +1,4 @@
-package thesistrack.ls1.controller;
+package thesismanagement.ls1.controller;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
@@ -8,10 +8,10 @@ import org.springframework.test.context.DynamicPropertyRegistry;
 import org.springframework.test.context.DynamicPropertySource;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.testcontainers.junit.jupiter.Testcontainers;
-import thesistrack.ls1.constants.ApplicationRejectReason;
-import thesistrack.ls1.controller.payload.CloseTopicPayload;
-import thesistrack.ls1.controller.payload.ReplaceTopicPayload;
-import thesistrack.ls1.mock.BaseIntegrationTest;
+import thesismanagement.ls1.constants.ApplicationRejectReason;
+import thesismanagement.ls1.controller.payload.CloseTopicPayload;
+import thesismanagement.ls1.controller.payload.ReplaceTopicPayload;
+import thesismanagement.ls1.mock.BaseIntegrationTest;
 
 import java.util.List;
 import java.util.Set;

@@ -1,4 +1,4 @@
-package thesistrack.ls1.utility;
+package thesismanagement.ls1.utility;
 
 import jakarta.mail.internet.AddressException;
 import jakarta.mail.internet.InternetAddress;
@@ -8,8 +8,8 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import org.thymeleaf.ITemplateEngine;
 import org.thymeleaf.TemplateEngine;
-import thesistrack.ls1.entity.User;
-import thesistrack.ls1.repository.UserRepository;
+import thesismanagement.ls1.entity.User;
+import thesismanagement.ls1.repository.UserRepository;
 
 import java.util.*;
 
@@ -39,12 +39,12 @@ public class MailConfig {
 
     @Autowired
     public MailConfig(
-            @Value("${thesis-track.mail.enabled}") boolean enabled,
-            @Value("${thesis-track.mail.sender}") InternetAddress sender,
-            @Value("${thesis-track.mail.bcc-recipients}") String bccRecipientsList,
-            @Value("${thesis-track.mail.signature}") String mailSignature,
-            @Value("${thesis-track.mail.workspace-url}") String workspaceUrl,
-            @Value("${thesis-track.client.host}") String clientHost,
+            @Value("${thesis-management.mail.enabled}") boolean enabled,
+            @Value("${thesis-management.mail.sender}") InternetAddress sender,
+            @Value("${thesis-management.mail.bcc-recipients}") String bccRecipientsList,
+            @Value("${thesis-management.mail.signature}") String mailSignature,
+            @Value("${thesis-management.mail.workspace-url}") String workspaceUrl,
+            @Value("${thesis-management.client.host}") String clientHost,
             TemplateEngine templateEngine,
             UserRepository userRepository
     ) {

@@ -1,4 +1,4 @@
-package thesistrack.ls1.security;
+package thesismanagement.ls1.security;
 
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.lang.NonNull;

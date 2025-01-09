@@ -1,4 +1,4 @@
-package thesistrack.ls1.security;
+package thesismanagement.ls1.security;
 
 import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
@@ -9,7 +9,7 @@ import org.springframework.validation.annotation.Validated;
 @Data
 @Validated
 @Configuration
-@ConfigurationProperties(prefix = "thesis-track.keycloak")
+@ConfigurationProperties(prefix = "thesis-management.keycloak")
 public class JwtAuthConfig {
     @NotBlank
     private String clientId;

@@ -1,4 +1,4 @@
-package thesistrack.ls1.controller;
+package thesismanagement.ls1.controller;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,16 +11,16 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.oauth2.server.resource.authentication.JwtAuthenticationToken;
 import org.springframework.web.bind.annotation.*;
-import thesistrack.ls1.constants.ThesisState;
-import thesistrack.ls1.constants.ThesisVisibility;
-import thesistrack.ls1.dto.PaginationDto;
-import thesistrack.ls1.dto.PublishedThesisDto;
-import thesistrack.ls1.entity.Thesis;
-import thesistrack.ls1.entity.User;
-import thesistrack.ls1.service.AuthenticationService;
-import thesistrack.ls1.service.ThesisService;
-import thesistrack.ls1.service.UploadService;
-import thesistrack.ls1.service.UserService;
+import thesismanagement.ls1.constants.ThesisState;
+import thesismanagement.ls1.constants.ThesisVisibility;
+import thesismanagement.ls1.dto.PaginationDto;
+import thesismanagement.ls1.dto.PublishedThesisDto;
+import thesismanagement.ls1.entity.Thesis;
+import thesismanagement.ls1.entity.User;
+import thesismanagement.ls1.service.AuthenticationService;
+import thesismanagement.ls1.service.ThesisService;
+import thesismanagement.ls1.service.UploadService;
+import thesismanagement.ls1.service.UserService;
 
 import java.util.Set;
 import java.util.UUID;

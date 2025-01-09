@@ -1,4 +1,4 @@
-package thesistrack.ls1.utility;
+package thesismanagement.ls1.utility;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -6,7 +6,7 @@ import org.junit.jupiter.params.provider.ValueSource;
 import org.junit.jupiter.params.provider.NullAndEmptySource;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
-import thesistrack.ls1.exception.request.ResourceInvalidParametersException;
+import thesismanagement.ls1.exception.request.ResourceInvalidParametersException;
 
 import java.util.HashSet;
 import java.util.Set;

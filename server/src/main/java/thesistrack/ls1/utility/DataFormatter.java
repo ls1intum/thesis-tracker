@@ -1,7 +1,7 @@
-package thesistrack.ls1.utility;
+package thesismanagement.ls1.utility;
 
-import thesistrack.ls1.dto.LightUserDto;
-import thesistrack.ls1.entity.User;
+import thesismanagement.ls1.dto.LightUserDto;
+import thesismanagement.ls1.entity.User;
 
 import java.time.Instant;
 import java.time.ZoneId;

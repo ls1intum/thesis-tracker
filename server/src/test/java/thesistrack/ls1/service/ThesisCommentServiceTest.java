@@ -1,4 +1,4 @@
-package thesistrack.ls1.service;
+package thesismanagement.ls1.service;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -12,14 +12,14 @@ import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.mock.web.MockMultipartFile;
 import org.springframework.web.multipart.MultipartFile;
-import thesistrack.ls1.constants.ThesisCommentType;
-import thesistrack.ls1.constants.UploadFileType;
-import thesistrack.ls1.entity.Thesis;
-import thesistrack.ls1.entity.ThesisComment;
-import thesistrack.ls1.entity.User;
-import thesistrack.ls1.exception.request.ResourceNotFoundException;
-import thesistrack.ls1.mock.EntityMockFactory;
-import thesistrack.ls1.repository.ThesisCommentRepository;
+import thesismanagement.ls1.constants.ThesisCommentType;
+import thesismanagement.ls1.constants.UploadFileType;
+import thesismanagement.ls1.entity.Thesis;
+import thesismanagement.ls1.entity.ThesisComment;
+import thesismanagement.ls1.entity.User;
+import thesismanagement.ls1.exception.request.ResourceNotFoundException;
+import thesismanagement.ls1.mock.EntityMockFactory;
+import thesismanagement.ls1.repository.ThesisCommentRepository;
 
 import java.time.Instant;
 import java.util.List;

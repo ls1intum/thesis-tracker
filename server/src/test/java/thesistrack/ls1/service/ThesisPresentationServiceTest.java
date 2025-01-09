@@ -1,4 +1,4 @@
-package thesistrack.ls1.service;
+package thesismanagement.ls1.service;
 
 import jakarta.mail.internet.InternetAddress;
 import net.fortuna.ical4j.model.Calendar;
@@ -10,18 +10,18 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.PageRequest;
-import thesistrack.ls1.constants.ThesisPresentationState;
-import thesistrack.ls1.constants.ThesisPresentationType;
-import thesistrack.ls1.constants.ThesisPresentationVisibility;
-import thesistrack.ls1.entity.*;
-import thesistrack.ls1.exception.request.AccessDeniedException;
-import thesistrack.ls1.exception.request.ResourceInvalidParametersException;
-import thesistrack.ls1.exception.request.ResourceNotFoundException;
-import thesistrack.ls1.mock.EntityMockFactory;
-import thesistrack.ls1.repository.ThesisPresentationInviteRepository;
-import thesistrack.ls1.repository.ThesisPresentationRepository;
-import thesistrack.ls1.repository.ThesisRepository;
-import thesistrack.ls1.repository.UserRepository;
+import thesismanagement.ls1.constants.ThesisPresentationState;
+import thesismanagement.ls1.constants.ThesisPresentationType;
+import thesismanagement.ls1.constants.ThesisPresentationVisibility;
+import thesismanagement.ls1.entity.*;
+import thesismanagement.ls1.exception.request.AccessDeniedException;
+import thesismanagement.ls1.exception.request.ResourceInvalidParametersException;
+import thesismanagement.ls1.exception.request.ResourceNotFoundException;
+import thesismanagement.ls1.mock.EntityMockFactory;
+import thesismanagement.ls1.repository.ThesisPresentationInviteRepository;
+import thesismanagement.ls1.repository.ThesisPresentationRepository;
+import thesismanagement.ls1.repository.ThesisRepository;
+import thesismanagement.ls1.repository.UserRepository;
 
 import java.time.Instant;
 import java.util.*;

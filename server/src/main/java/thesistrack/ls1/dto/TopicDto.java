@@ -1,8 +1,8 @@
-package thesistrack.ls1.dto;
+package thesismanagement.ls1.dto;
 
-import thesistrack.ls1.constants.ThesisRoleName;
-import thesistrack.ls1.entity.Topic;
-import thesistrack.ls1.entity.TopicRole;
+import thesismanagement.ls1.constants.ThesisRoleName;
+import thesismanagement.ls1.entity.Topic;
+import thesismanagement.ls1.entity.TopicRole;
 
 import java.time.Instant;
 import java.util.ArrayList;

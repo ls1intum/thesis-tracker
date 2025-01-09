@@ -1,6 +1,6 @@
-package thesistrack.ls1.controller.payload;
+package thesismanagement.ls1.controller.payload;
 
-import thesistrack.ls1.constants.ThesisVisibility;
+import thesismanagement.ls1.constants.ThesisVisibility;
 
 public record AddThesisGradePayload(
         String finalGrade,

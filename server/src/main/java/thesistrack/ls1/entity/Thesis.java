@@ -1,4 +1,4 @@
-package thesistrack.ls1.entity;
+package thesismanagement.ls1.entity;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
@@ -7,12 +7,12 @@ import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.JdbcTypeCode;
 import org.hibernate.type.SqlTypes;
-import thesistrack.ls1.constants.ThesisFeedbackType;
-import thesistrack.ls1.constants.ThesisRoleName;
-import thesistrack.ls1.constants.ThesisState;
-import thesistrack.ls1.constants.ThesisVisibility;
-import thesistrack.ls1.dto.LightUserDto;
-import thesistrack.ls1.entity.jsonb.ThesisMetadata;
+import thesismanagement.ls1.constants.ThesisFeedbackType;
+import thesismanagement.ls1.constants.ThesisRoleName;
+import thesismanagement.ls1.constants.ThesisState;
+import thesismanagement.ls1.constants.ThesisVisibility;
+import thesismanagement.ls1.dto.LightUserDto;
+import thesismanagement.ls1.entity.jsonb.ThesisMetadata;
 
 import java.time.Instant;
 import java.util.*;

@@ -1,4 +1,4 @@
-package thesistrack.ls1;
+package thesismanagement.ls1;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -10,11 +10,11 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
 @EnableScheduling
-public class ThesisTrackApplication implements ApplicationRunner {
-	private static final Logger logger = LoggerFactory.getLogger(ThesisTrackApplication.class);
+public class ThesisManagementApplication implements ApplicationRunner {
+	private static final Logger logger = LoggerFactory.getLogger(ThesisManagementApplication.class);
 
 	public static void main(String[] args) {
-		SpringApplication.run(ThesisTrackApplication.class, args);
+		SpringApplication.run(ThesisManagementApplication.class, args);
 	}
 
 	@Override

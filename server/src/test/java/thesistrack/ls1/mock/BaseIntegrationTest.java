@@ -1,4 +1,4 @@
-package thesistrack.ls1.mock;
+package thesismanagement.ls1.mock;
 
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
@@ -21,10 +21,10 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.testcontainers.containers.PostgreSQLContainer;
 import org.testcontainers.junit.jupiter.Container;
-import thesistrack.ls1.controller.payload.CreateApplicationPayload;
-import thesistrack.ls1.controller.payload.CreateThesisPayload;
-import thesistrack.ls1.controller.payload.ReplaceTopicPayload;
-import thesistrack.ls1.repository.*;
+import thesismanagement.ls1.controller.payload.CreateApplicationPayload;
+import thesismanagement.ls1.controller.payload.CreateThesisPayload;
+import thesismanagement.ls1.controller.payload.ReplaceTopicPayload;
+import thesismanagement.ls1.repository.*;
 
 import java.time.Instant;
 import java.util.*;

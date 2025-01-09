@@ -1,4 +1,4 @@
-package thesistrack.ls1.service;
+package thesismanagement.ls1.service;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -8,7 +8,7 @@ import org.springframework.http.HttpMethod;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.BodyInserters;
 import org.springframework.web.reactive.function.client.WebClient;
-import thesistrack.ls1.entity.User;
+import thesismanagement.ls1.entity.User;
 
 import org.springframework.http.HttpHeaders;
 
@@ -33,11 +33,11 @@ public class AccessManagementService {
 
     @Autowired
     public AccessManagementService(
-            @Value("${thesis-track.keycloak.host}") String keycloakHost,
-            @Value("${thesis-track.keycloak.realm-name}") String keycloakRealmName,
-            @Value("${thesis-track.keycloak.service-client.id}") String serviceClientId,
-            @Value("${thesis-track.keycloak.service-client.secret}") String serviceClientSecret,
-            @Value("${thesis-track.keycloak.service-client.student-group-name}") String studentGroupName
+            @Value("${thesis-management.keycloak.host}") String keycloakHost,
+            @Value("${thesis-management.keycloak.realm-name}") String keycloakRealmName,
+            @Value("${thesis-management.keycloak.service-client.id}") String serviceClientId,
+            @Value("${thesis-management.keycloak.service-client.secret}") String serviceClientSecret,
+            @Value("${thesis-management.keycloak.service-client.student-group-name}") String studentGroupName
     ) {
         this.keycloakRealmName = keycloakRealmName;
         this.serviceClientId = serviceClientId;

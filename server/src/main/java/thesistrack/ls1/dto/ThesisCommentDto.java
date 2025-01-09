@@ -1,6 +1,6 @@
-package thesistrack.ls1.dto;
+package thesismanagement.ls1.dto;
 
-import thesistrack.ls1.entity.ThesisComment;
+import thesismanagement.ls1.entity.ThesisComment;
 
 import java.time.Instant;
 import java.util.UUID;

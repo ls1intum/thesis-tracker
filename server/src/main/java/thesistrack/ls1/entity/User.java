@@ -1,4 +1,4 @@
-package thesistrack.ls1.entity;
+package thesismanagement.ls1.entity;
 
 import jakarta.mail.internet.InternetAddress;
 import jakarta.persistence.*;

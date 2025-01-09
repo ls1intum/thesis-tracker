@@ -1,12 +1,12 @@
-package thesistrack.ls1.entity;
+package thesismanagement.ls1.entity;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
-import thesistrack.ls1.constants.ApplicationRejectReason;
-import thesistrack.ls1.constants.ApplicationState;
+import thesismanagement.ls1.constants.ApplicationRejectReason;
+import thesismanagement.ls1.constants.ApplicationState;
 
 import java.time.Instant;
 import java.util.ArrayList;

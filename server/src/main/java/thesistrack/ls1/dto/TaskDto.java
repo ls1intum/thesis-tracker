@@ -1,4 +1,4 @@
-package thesistrack.ls1.dto;
+package thesismanagement.ls1.dto;
 
 public record TaskDto(
         String message,

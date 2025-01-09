@@ -1,8 +1,8 @@
-package thesistrack.ls1.utility;
+package thesismanagement.ls1.utility;
 
 import jakarta.mail.internet.AddressException;
 import jakarta.mail.internet.InternetAddress;
-import thesistrack.ls1.exception.request.ResourceInvalidParametersException;
+import thesismanagement.ls1.exception.request.ResourceInvalidParametersException;
 
 import java.util.Set;
 

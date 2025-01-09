@@ -1,4 +1,4 @@
-package thesistrack.ls1.service;
+package thesismanagement.ls1.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
@@ -6,9 +6,9 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
-import thesistrack.ls1.entity.User;
-import thesistrack.ls1.exception.request.ResourceNotFoundException;
-import thesistrack.ls1.repository.UserRepository;
+import thesismanagement.ls1.entity.User;
+import thesismanagement.ls1.exception.request.ResourceNotFoundException;
+import thesismanagement.ls1.repository.UserRepository;
 
 import java.util.Arrays;
 import java.util.HashSet;

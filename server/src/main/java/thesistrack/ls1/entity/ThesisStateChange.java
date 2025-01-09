@@ -1,10 +1,10 @@
-package thesistrack.ls1.entity;
+package thesismanagement.ls1.entity;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.Setter;
-import thesistrack.ls1.entity.key.ThesisStateChangeId;
+import thesismanagement.ls1.entity.key.ThesisStateChangeId;
 
 import java.time.Instant;
 

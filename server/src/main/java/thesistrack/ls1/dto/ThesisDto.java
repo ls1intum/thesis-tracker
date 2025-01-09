@@ -1,8 +1,8 @@
-package thesistrack.ls1.dto;
+package thesismanagement.ls1.dto;
 
-import thesistrack.ls1.constants.*;
-import thesistrack.ls1.entity.*;
-import thesistrack.ls1.entity.jsonb.ThesisMetadata;
+import thesismanagement.ls1.constants.*;
+import thesismanagement.ls1.entity.*;
+import thesismanagement.ls1.entity.jsonb.ThesisMetadata;
 
 import java.time.Instant;
 import java.util.*;

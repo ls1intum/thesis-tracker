@@ -1,4 +1,4 @@
-package thesistrack.ls1.utility;
+package thesismanagement.ls1.utility;
 
 import jakarta.activation.DataHandler;
 import jakarta.activation.FileDataSource;
@@ -14,13 +14,13 @@ import org.slf4j.LoggerFactory;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.thymeleaf.context.Context;
 import org.thymeleaf.spring6.SpringTemplateEngine;
-import thesistrack.ls1.constants.ThesisRoleName;
-import thesistrack.ls1.dto.ApplicationDto;
-import thesistrack.ls1.dto.ThesisCommentDto;
-import thesistrack.ls1.dto.ThesisDto;
-import thesistrack.ls1.dto.UserDto;
-import thesistrack.ls1.entity.*;
-import thesistrack.ls1.service.UploadService;
+import thesismanagement.ls1.constants.ThesisRoleName;
+import thesismanagement.ls1.dto.ApplicationDto;
+import thesismanagement.ls1.dto.ThesisCommentDto;
+import thesismanagement.ls1.dto.ThesisDto;
+import thesismanagement.ls1.dto.UserDto;
+import thesismanagement.ls1.entity.*;
+import thesismanagement.ls1.service.UploadService;
 
 import java.util.*;
 
@@ -289,7 +289,7 @@ public class MailBuilder {
             try {
                 MimeMessage message = mailSender.createMimeMessage();
 
-                message.setFrom("ThesisTrack <" + config.getSender().getAddress() + ">");
+                message.setFrom("ThesisManagement <" + config.getSender().getAddress() + ">");
                 message.setSender(config.getSender());
 
                 message.addRecipient(Message.RecipientType.TO, recipient.getEmail());

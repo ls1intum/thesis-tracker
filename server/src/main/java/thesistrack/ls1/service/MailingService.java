@@ -1,18 +1,18 @@
-package thesistrack.ls1.service;
+package thesismanagement.ls1.service;
 
 import jakarta.mail.util.ByteArrayDataSource;
 import org.apache.commons.io.FilenameUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
-import thesistrack.ls1.constants.ThesisCommentType;
-import thesistrack.ls1.constants.ApplicationRejectReason;
-import thesistrack.ls1.constants.ThesisFeedbackType;
-import thesistrack.ls1.constants.ThesisPresentationVisibility;
-import thesistrack.ls1.entity.*;
-import thesistrack.ls1.utility.DataFormatter;
-import thesistrack.ls1.utility.MailBuilder;
-import thesistrack.ls1.utility.MailConfig;
+import thesismanagement.ls1.constants.ThesisCommentType;
+import thesismanagement.ls1.constants.ApplicationRejectReason;
+import thesismanagement.ls1.constants.ThesisFeedbackType;
+import thesismanagement.ls1.constants.ThesisPresentationVisibility;
+import thesismanagement.ls1.entity.*;
+import thesismanagement.ls1.utility.DataFormatter;
+import thesismanagement.ls1.utility.MailBuilder;
+import thesismanagement.ls1.utility.MailConfig;
 
 import java.nio.charset.StandardCharsets;
 import java.time.Instant;

@@ -1,4 +1,4 @@
-package thesistrack.ls1.security;
+package thesismanagement.ls1.security;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
@@ -28,7 +28,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 public class WebSecurityConfig {
     private final JwtAuthConverter jwtAuthConverter;
 
-    @Value("${thesis-track.client.host}")
+    @Value("${thesis-management.client.host}")
     private String clientHost;
 
     @Bean

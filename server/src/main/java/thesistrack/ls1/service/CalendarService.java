@@ -1,4 +1,4 @@
-package thesistrack.ls1.service;
+package thesismanagement.ls1.service;
 
 import jakarta.mail.internet.InternetAddress;
 import net.fortuna.ical4j.data.CalendarBuilder;
@@ -34,10 +34,10 @@ public class CalendarService {
     private final boolean enabled;
 
     public CalendarService(
-            @Value("${thesis-track.calendar.enabled}") Boolean enabled,
-            @Value("${thesis-track.calendar.url}") String caldavUrl,
-            @Value("${thesis-track.calendar.username}") String caldavUsername,
-            @Value("${thesis-track.calendar.password}") String caldavPassword
+            @Value("${thesis-management.calendar.enabled}") Boolean enabled,
+            @Value("${thesis-management.calendar.url}") String caldavUrl,
+            @Value("${thesis-management.calendar.username}") String caldavUsername,
+            @Value("${thesis-management.calendar.password}") String caldavPassword
     ) {
         this.enabled = enabled;
 

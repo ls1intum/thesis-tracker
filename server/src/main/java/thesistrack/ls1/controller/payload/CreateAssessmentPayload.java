@@ -1,4 +1,4 @@
-package thesistrack.ls1.controller.payload;
+package thesismanagement.ls1.controller.payload;
 
 public record CreateAssessmentPayload(
         String summary,

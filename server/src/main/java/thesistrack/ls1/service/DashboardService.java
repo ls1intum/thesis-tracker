@@ -1,22 +1,22 @@
-package thesistrack.ls1.service;
+package thesismanagement.ls1.service;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
-import thesistrack.ls1.constants.ThesisPresentationState;
-import thesistrack.ls1.constants.ThesisPresentationVisibility;
-import thesistrack.ls1.constants.ThesisRoleName;
-import thesistrack.ls1.constants.ThesisState;
-import thesistrack.ls1.dto.TaskDto;
-import thesistrack.ls1.entity.Thesis;
-import thesistrack.ls1.entity.ThesisPresentation;
-import thesistrack.ls1.entity.User;
-import thesistrack.ls1.repository.ApplicationRepository;
-import thesistrack.ls1.repository.ThesisPresentationRepository;
-import thesistrack.ls1.repository.ThesisRepository;
-import thesistrack.ls1.repository.TopicRepository;
+import thesismanagement.ls1.constants.ThesisPresentationState;
+import thesismanagement.ls1.constants.ThesisPresentationVisibility;
+import thesismanagement.ls1.constants.ThesisRoleName;
+import thesismanagement.ls1.constants.ThesisState;
+import thesismanagement.ls1.dto.TaskDto;
+import thesismanagement.ls1.entity.Thesis;
+import thesismanagement.ls1.entity.ThesisPresentation;
+import thesismanagement.ls1.entity.User;
+import thesismanagement.ls1.repository.ApplicationRepository;
+import thesismanagement.ls1.repository.ThesisPresentationRepository;
+import thesismanagement.ls1.repository.ThesisRepository;
+import thesismanagement.ls1.repository.TopicRepository;
 
 import java.time.Instant;
 import java.time.temporal.ChronoUnit;
@@ -36,7 +36,7 @@ public class DashboardService {
             ThesisRepository thesisRepository,
             ApplicationRepository applicationRepository,
             TopicRepository topicRepository,
-            @Value("${thesis-track.scientific-writing-guide}") String scientificWritingGuide
+            @Value("${thesis-management.scientific-writing-guide}") String scientificWritingGuide
     ) {
         this.thesisRepository = thesisRepository;
         this.applicationRepository = applicationRepository;

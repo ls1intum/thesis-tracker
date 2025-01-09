@@ -1,13 +1,13 @@
-package thesistrack.ls1.cron;
+package thesismanagement.ls1.cron;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
-import thesistrack.ls1.entity.User;
-import thesistrack.ls1.repository.ApplicationRepository;
-import thesistrack.ls1.repository.UserRepository;
-import thesistrack.ls1.service.MailingService;
+import thesismanagement.ls1.entity.User;
+import thesismanagement.ls1.repository.ApplicationRepository;
+import thesismanagement.ls1.repository.UserRepository;
+import thesismanagement.ls1.service.MailingService;
 
 import java.time.Instant;
 import java.util.Set;

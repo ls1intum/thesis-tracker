@@ -1,7 +1,7 @@
-package thesistrack.ls1.controller.payload;
+package thesismanagement.ls1.controller.payload;
 
-import thesistrack.ls1.constants.ThesisPresentationType;
-import thesistrack.ls1.constants.ThesisPresentationVisibility;
+import thesismanagement.ls1.constants.ThesisPresentationType;
+import thesismanagement.ls1.constants.ThesisPresentationVisibility;
 
 import java.time.Instant;
 

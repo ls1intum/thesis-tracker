@@ -1,4 +1,4 @@
-package thesistrack.ls1.controller;
+package thesismanagement.ls1.controller;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,19 +10,19 @@ import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.oauth2.server.resource.authentication.JwtAuthenticationToken;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
-import thesistrack.ls1.constants.ApplicationRejectReason;
-import thesistrack.ls1.constants.ApplicationState;
-import thesistrack.ls1.constants.StringLimits;
-import thesistrack.ls1.controller.payload.*;
-import thesistrack.ls1.dto.ApplicationDto;
-import thesistrack.ls1.dto.PaginationDto;
-import thesistrack.ls1.entity.Application;
-import thesistrack.ls1.entity.User;
-import thesistrack.ls1.exception.request.ResourceAlreadyExistsException;
-import thesistrack.ls1.exception.request.ResourceInvalidParametersException;
-import thesistrack.ls1.service.ApplicationService;
-import thesistrack.ls1.service.AuthenticationService;
-import thesistrack.ls1.utility.RequestValidator;
+import thesismanagement.ls1.constants.ApplicationRejectReason;
+import thesismanagement.ls1.constants.ApplicationState;
+import thesismanagement.ls1.constants.StringLimits;
+import thesismanagement.ls1.controller.payload.*;
+import thesismanagement.ls1.dto.ApplicationDto;
+import thesismanagement.ls1.dto.PaginationDto;
+import thesismanagement.ls1.entity.Application;
+import thesismanagement.ls1.entity.User;
+import thesismanagement.ls1.exception.request.ResourceAlreadyExistsException;
+import thesismanagement.ls1.exception.request.ResourceInvalidParametersException;
+import thesismanagement.ls1.service.ApplicationService;
+import thesismanagement.ls1.service.AuthenticationService;
+import thesismanagement.ls1.utility.RequestValidator;
 
 import java.util.List;
 import java.util.UUID;

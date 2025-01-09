@@ -1,4 +1,4 @@
-package thesistrack.ls1.service;
+package thesismanagement.ls1.service;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -8,12 +8,12 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.mock.web.MockMultipartFile;
 import org.springframework.web.multipart.MultipartFile;
-import thesistrack.ls1.constants.*;
-import thesistrack.ls1.entity.*;
-import thesistrack.ls1.exception.request.ResourceInvalidParametersException;
-import thesistrack.ls1.exception.request.ResourceNotFoundException;
-import thesistrack.ls1.mock.EntityMockFactory;
-import thesistrack.ls1.repository.*;
+import thesismanagement.ls1.constants.*;
+import thesismanagement.ls1.entity.*;
+import thesismanagement.ls1.exception.request.ResourceInvalidParametersException;
+import thesismanagement.ls1.exception.request.ResourceNotFoundException;
+import thesismanagement.ls1.mock.EntityMockFactory;
+import thesismanagement.ls1.repository.*;
 
 import java.util.*;
 

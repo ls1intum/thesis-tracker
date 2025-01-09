@@ -1,4 +1,4 @@
-package thesistrack.ls1.entity.key;
+package thesismanagement.ls1.entity.key;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
@@ -8,7 +8,7 @@ import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.Hibernate;
-import thesistrack.ls1.constants.ThesisState;
+import thesismanagement.ls1.constants.ThesisState;
 
 import java.io.Serial;
 import java.io.Serializable;

@@ -1,4 +1,4 @@
-package thesistrack.ls1.entity.jsonb;
+package thesismanagement.ls1.entity.jsonb;
 
 import java.util.HashMap;
 import java.util.Map;

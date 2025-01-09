@@ -1,4 +1,4 @@
-package thesistrack.ls1.mock;
+package thesismanagement.ls1.mock;
 
 import com.auth0.jwt.JWT;
 import org.springframework.boot.test.context.TestConfiguration;

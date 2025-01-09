@@ -1,4 +1,4 @@
-package thesistrack.ls1.service;
+package thesismanagement.ls1.service;
 
 import org.springframework.core.io.Resource;
 import org.springframework.data.domain.Page;
@@ -7,13 +7,13 @@ import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
-import thesistrack.ls1.constants.ThesisCommentType;
-import thesistrack.ls1.constants.UploadFileType;
-import thesistrack.ls1.entity.Thesis;
-import thesistrack.ls1.entity.ThesisComment;
-import thesistrack.ls1.entity.User;
-import thesistrack.ls1.exception.request.ResourceNotFoundException;
-import thesistrack.ls1.repository.ThesisCommentRepository;
+import thesismanagement.ls1.constants.ThesisCommentType;
+import thesismanagement.ls1.constants.UploadFileType;
+import thesismanagement.ls1.entity.Thesis;
+import thesismanagement.ls1.entity.ThesisComment;
+import thesismanagement.ls1.entity.User;
+import thesismanagement.ls1.exception.request.ResourceNotFoundException;
+import thesismanagement.ls1.repository.ThesisCommentRepository;
 
 import java.time.Instant;
 import java.util.UUID;

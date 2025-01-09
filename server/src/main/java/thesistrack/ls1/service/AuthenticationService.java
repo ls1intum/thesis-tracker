@@ -1,4 +1,4 @@
-package thesistrack.ls1.service;
+package thesismanagement.ls1.service;
 
 import jakarta.mail.internet.AddressException;
 import jakarta.mail.internet.InternetAddress;
@@ -7,16 +7,16 @@ import org.springframework.security.oauth2.server.resource.authentication.JwtAut
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
-import thesistrack.ls1.constants.UploadFileType;
-import thesistrack.ls1.entity.NotificationSetting;
-import thesistrack.ls1.entity.User;
-import thesistrack.ls1.entity.UserGroup;
-import thesistrack.ls1.entity.key.NotificationSettingId;
-import thesistrack.ls1.entity.key.UserGroupId;
-import thesistrack.ls1.exception.request.ResourceNotFoundException;
-import thesistrack.ls1.repository.NotificationSettingRepository;
-import thesistrack.ls1.repository.UserGroupRepository;
-import thesistrack.ls1.repository.UserRepository;
+import thesismanagement.ls1.constants.UploadFileType;
+import thesismanagement.ls1.entity.NotificationSetting;
+import thesismanagement.ls1.entity.User;
+import thesismanagement.ls1.entity.UserGroup;
+import thesismanagement.ls1.entity.key.NotificationSettingId;
+import thesismanagement.ls1.entity.key.UserGroupId;
+import thesismanagement.ls1.exception.request.ResourceNotFoundException;
+import thesismanagement.ls1.repository.NotificationSettingRepository;
+import thesismanagement.ls1.repository.UserGroupRepository;
+import thesismanagement.ls1.repository.UserRepository;
 
 import java.time.Instant;
 import java.util.*;

@@ -1,4 +1,4 @@
-package thesistrack.ls1.constants;
+package thesismanagement.ls1.constants;
 
 import lombok.Getter;
 

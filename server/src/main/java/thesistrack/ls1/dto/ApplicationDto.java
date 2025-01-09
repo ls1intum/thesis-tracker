@@ -1,10 +1,10 @@
-package thesistrack.ls1.dto;
+package thesismanagement.ls1.dto;
 
-import thesistrack.ls1.constants.ApplicationRejectReason;
-import thesistrack.ls1.constants.ApplicationReviewReason;
-import thesistrack.ls1.constants.ApplicationState;
-import thesistrack.ls1.entity.Application;
-import thesistrack.ls1.entity.ApplicationReviewer;
+import thesismanagement.ls1.constants.ApplicationRejectReason;
+import thesismanagement.ls1.constants.ApplicationReviewReason;
+import thesismanagement.ls1.constants.ApplicationState;
+import thesismanagement.ls1.entity.Application;
+import thesismanagement.ls1.entity.ApplicationReviewer;
 
 import java.time.Instant;
 import java.util.List;

@@ -15,9 +15,9 @@ const getEnvironmentVariable = <T = string>(key: string, useJson = false): T | u
 }
 
 export const GLOBAL_CONFIG: IGlobalConfig = {
-  title: getEnvironmentVariable('APPLICATION_TITLE') || 'ThesisTrack',
+  title: getEnvironmentVariable('APPLICATION_TITLE') || 'ThesisManagement',
 
-  chair_name: getEnvironmentVariable('CHAIR_NAME') || 'ThesisTrack',
+  chair_name: getEnvironmentVariable('CHAIR_NAME') || 'ThesisManagement',
   chair_url: getEnvironmentVariable('CHAIR_URL') || window.origin,
 
   allow_suggested_topics: (getEnvironmentVariable('ALLOW_SUGGESTED_TOPICS') || 'true') === 'true',
@@ -100,7 +100,7 @@ export const GLOBAL_CONFIG: IGlobalConfig = {
 
   keycloak: {
     host: getEnvironmentVariable('KEYCLOAK_HOST') || 'http://localhost:8081',
-    realm: getEnvironmentVariable('KEYCLOAK_REALM_NAME') || 'thesis-track',
-    client_id: getEnvironmentVariable('KEYCLOAK_CLIENT_ID') || 'thesis-track-app',
+    realm: getEnvironmentVariable('KEYCLOAK_REALM_NAME') || 'thesis-management',
+    client_id: getEnvironmentVariable('KEYCLOAK_CLIENT_ID') || 'thesis-management-app',
   },
 }

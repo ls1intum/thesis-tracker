@@ -1,7 +1,7 @@
-package thesistrack.ls1.dto;
+package thesismanagement.ls1.dto;
 
-import thesistrack.ls1.constants.ThesisState;
-import thesistrack.ls1.entity.Thesis;
+import thesismanagement.ls1.constants.ThesisState;
+import thesismanagement.ls1.entity.Thesis;
 
 import java.time.Instant;
 import java.util.List;

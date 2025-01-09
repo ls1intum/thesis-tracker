@@ -1,4 +1,4 @@
-package thesistrack.ls1.service;
+package thesismanagement.ls1.service;
 
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,17 +7,17 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import thesistrack.ls1.constants.ThesisRoleName;
-import thesistrack.ls1.entity.Topic;
-import thesistrack.ls1.entity.TopicRole;
-import thesistrack.ls1.entity.User;
-import thesistrack.ls1.entity.key.TopicRoleId;
-import thesistrack.ls1.exception.request.ResourceInvalidParametersException;
-import thesistrack.ls1.exception.request.ResourceNotFoundException;
-import thesistrack.ls1.repository.TopicRepository;
-import thesistrack.ls1.repository.TopicRoleRepository;
-import thesistrack.ls1.repository.UserRepository;
-import thesistrack.ls1.utility.HibernateHelper;
+import thesismanagement.ls1.constants.ThesisRoleName;
+import thesismanagement.ls1.entity.Topic;
+import thesismanagement.ls1.entity.TopicRole;
+import thesismanagement.ls1.entity.User;
+import thesismanagement.ls1.entity.key.TopicRoleId;
+import thesismanagement.ls1.exception.request.ResourceInvalidParametersException;
+import thesismanagement.ls1.exception.request.ResourceNotFoundException;
+import thesismanagement.ls1.repository.TopicRepository;
+import thesismanagement.ls1.repository.TopicRoleRepository;
+import thesismanagement.ls1.repository.UserRepository;
+import thesismanagement.ls1.utility.HibernateHelper;
 
 import java.time.Instant;
 import java.util.*;

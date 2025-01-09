@@ -1,4 +1,4 @@
-package thesistrack.ls1.service;
+package thesismanagement.ls1.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
@@ -9,19 +9,19 @@ import org.springframework.security.core.parameters.P;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
-import thesistrack.ls1.constants.*;
-import thesistrack.ls1.controller.payload.RequestChangesPayload;
-import thesistrack.ls1.controller.payload.ThesisStatePayload;
-import thesistrack.ls1.entity.*;
-import thesistrack.ls1.entity.jsonb.ThesisMetadata;
-import thesistrack.ls1.entity.key.ThesisRoleId;
-import thesistrack.ls1.entity.key.ThesisStateChangeId;
-import thesistrack.ls1.exception.request.ResourceInvalidParametersException;
-import thesistrack.ls1.exception.request.ResourceNotFoundException;
-import thesistrack.ls1.repository.*;
-import thesistrack.ls1.utility.DataFormatter;
-import thesistrack.ls1.utility.PDFBuilder;
-import thesistrack.ls1.utility.RequestValidator;
+import thesismanagement.ls1.constants.*;
+import thesismanagement.ls1.controller.payload.RequestChangesPayload;
+import thesismanagement.ls1.controller.payload.ThesisStatePayload;
+import thesismanagement.ls1.entity.*;
+import thesismanagement.ls1.entity.jsonb.ThesisMetadata;
+import thesismanagement.ls1.entity.key.ThesisRoleId;
+import thesismanagement.ls1.entity.key.ThesisStateChangeId;
+import thesismanagement.ls1.exception.request.ResourceInvalidParametersException;
+import thesismanagement.ls1.exception.request.ResourceNotFoundException;
+import thesismanagement.ls1.repository.*;
+import thesismanagement.ls1.utility.DataFormatter;
+import thesismanagement.ls1.utility.PDFBuilder;
+import thesismanagement.ls1.utility.RequestValidator;
 
 import java.time.Instant;
 import java.util.*;

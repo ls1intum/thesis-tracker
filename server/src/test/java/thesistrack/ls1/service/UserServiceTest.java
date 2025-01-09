@@ -1,4 +1,4 @@
-package thesistrack.ls1.service;
+package thesismanagement.ls1.service;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -10,10 +10,10 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
-import thesistrack.ls1.entity.User;
-import thesistrack.ls1.exception.request.ResourceNotFoundException;
-import thesistrack.ls1.mock.EntityMockFactory;
-import thesistrack.ls1.repository.UserRepository;
+import thesismanagement.ls1.entity.User;
+import thesismanagement.ls1.exception.request.ResourceNotFoundException;
+import thesismanagement.ls1.mock.EntityMockFactory;
+import thesismanagement.ls1.repository.UserRepository;
 
 import java.util.*;
 

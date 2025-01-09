@@ -1,11 +1,11 @@
-package thesistrack.ls1.mock;
+package thesismanagement.ls1.mock;
 
-import thesistrack.ls1.constants.ApplicationState;
-import thesistrack.ls1.constants.ThesisRoleName;
-import thesistrack.ls1.constants.ThesisState;
-import thesistrack.ls1.entity.*;
-import thesistrack.ls1.entity.key.ThesisRoleId;
-import thesistrack.ls1.entity.key.UserGroupId;
+import thesismanagement.ls1.constants.ApplicationState;
+import thesismanagement.ls1.constants.ThesisRoleName;
+import thesismanagement.ls1.constants.ThesisState;
+import thesismanagement.ls1.entity.*;
+import thesismanagement.ls1.entity.key.ThesisRoleId;
+import thesismanagement.ls1.entity.key.UserGroupId;
 
 import java.util.*;
 

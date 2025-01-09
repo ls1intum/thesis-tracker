@@ -1,9 +1,9 @@
-package thesistrack.ls1.entity;
+package thesismanagement.ls1.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
-import thesistrack.ls1.entity.key.UserGroupId;
+import thesismanagement.ls1.entity.key.UserGroupId;
 
 @Getter
 @Setter

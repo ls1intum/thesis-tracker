@@ -1,11 +1,11 @@
-package thesistrack.ls1.entity;
+package thesismanagement.ls1.entity;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
-import thesistrack.ls1.constants.ThesisCommentType;
+import thesismanagement.ls1.constants.ThesisCommentType;
 
 import java.time.Instant;
 import java.util.UUID;
