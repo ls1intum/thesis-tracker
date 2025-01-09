@@ -18,11 +18,11 @@ jobs:
       matrix:
         include:
           - dockerfile: ./client.Dockerfile
-            image: ghcr.io/ls1intum/thesis-track/thesis-track-client
+            image: ghcr.io/ls1intum/thesis-management/thesis-management-client
             context: ./
             path: client
           - dockerfile: ./server.Dockerfile
-            image: ghcr.io/ls1intum/thesis-track/thesis-track-server
+            image: ghcr.io/ls1intum/thesis-management/thesis-management-server
             context: ./
             path: server
     outputs:

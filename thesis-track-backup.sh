@@ -2,7 +2,7 @@
 
 # Configuration
 BACKUP_DIR="./backups"  # Directory to store backups
-DB_CONTAINER="thesis-track-db"  # PostgreSQL container name
+DB_CONTAINER="thesis-management-db"  # PostgreSQL container name
 UPLOADS_DIR="./thesis_uploads"  # Path to thesis_uploads folder
 DB_USER=$(grep SPRING_DATASOURCE_USERNAME .env.prod | cut -d '=' -f 2)  # Extract DB user from .env.prod
 DB_NAME=$(grep SPRING_DATASOURCE_DATABASE .env.prod | cut -d '=' -f 2)  # Extract DB name from .env.prod
