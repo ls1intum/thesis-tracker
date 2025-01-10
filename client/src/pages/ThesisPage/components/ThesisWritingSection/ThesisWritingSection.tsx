@@ -1,6 +1,5 @@
 import { IThesis, ThesisState } from '../../../../requests/responses/thesis'
-import { useState } from 'react'
-import { Accordion, Button, Center, Grid, Group, Stack, Text, Table } from '@mantine/core'
+import { Accordion, Center, Grid, Group, Stack, Text, Table } from '@mantine/core'
 import ConfirmationButton from '../../../../components/ConfirmationButton/ConfirmationButton'
 import { doRequest } from '../../../../requests/request'
 import { checkMinimumThesisState, isThesisClosed } from '../../../../utils/thesis'
@@ -14,8 +13,6 @@ import ThesisCommentsProvider from '../../../../providers/ThesisCommentsProvider
 import ThesisCommentsList from '../../../../components/ThesisCommentsList/ThesisCommentsList'
 import { ApiError, getApiResponseErrorMessage } from '../../../../requests/handler'
 import { formatDate, formatThesisFilename } from '../../../../utils/format'
-import ReplacePresentationModal from '../../../../components/PresentationsTable/components/ReplacePresentationModal/ReplacePresentationModal'
-import PresentationsTable from '../../../../components/PresentationsTable/PresentationsTable'
 import { GLOBAL_CONFIG } from '../../../../config/global'
 import UploadFileButton from '../../../../components/UploadFileButton/UploadFileButton'
 import AuthenticatedFilePreview from '../../../../components/AuthenticatedFilePreview/AuthenticatedFilePreview'
@@ -26,8 +23,6 @@ import FileHistoryTable from '../FileHistoryTable/FileHistoryTable'
 
 const ThesisWritingSection = () => {
   const { thesis, access, updateThesis } = useLoadedThesisContext()
-
-  const [createPresentationModal, setCreatePresentationModal] = useState(false)
 
   const [submitting, onFinalSubmission] = useThesisUpdateAction(async () => {
     const response = await doRequest<IThesis>(
@@ -280,36 +275,6 @@ const ThesisWritingSection = () => {
                     <ThesisCommentsList />
                     {access.student && <ThesisCommentsForm />}
                   </ThesisCommentsProvider>
-                </Stack>
-              </Accordion.Panel>
-            </Accordion.Item>
-            <Accordion.Item value='presentations'>
-              <Accordion.Control>Presentations</Accordion.Control>
-              <Accordion.Panel>
-                <Stack>
-                  <ReplacePresentationModal
-                    thesis={thesis}
-                    opened={createPresentationModal}
-                    onClose={() => setCreatePresentationModal(false)}
-                  />
-                  <PresentationsTable
-                    presentations={thesis.presentations}
-                    theses={[thesis]}
-                    columns={[
-                      'state',
-                      'type',
-                      'location',
-                      'streamUrl',
-                      'language',
-                      'scheduledAt',
-                      'actions',
-                    ]}
-                  />
-                  {access.student && !isThesisClosed(thesis) && (
-                    <Button ml='auto' onClick={() => setCreatePresentationModal(true)}>
-                      Create Presentation Draft
-                    </Button>
-                  )}
                 </Stack>
               </Accordion.Panel>
             </Accordion.Item>
