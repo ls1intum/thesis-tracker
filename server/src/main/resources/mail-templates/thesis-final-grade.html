@@ -8,9 +8,9 @@
   <strong>Final Grade</strong>: [[${thesis.grade.finalGrade}]]
 </p>
 
-<p th:inline="text">
+<p>
   <strong>Feedback</strong><br />
-  [[${thesis.grade.feedback}]]
+  <span th:utext="${thesis.grade.feedback}"></span>
 </p>
 
 <div th:replace="~{fragments/thesis-link :: main}"></div>
