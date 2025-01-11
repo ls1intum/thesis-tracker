@@ -11,6 +11,7 @@ import ThesisHeader from './components/ThesisHeader/ThesisHeader'
 import ThesisProvider from '../../providers/ThesisProvider/ThesisProvider'
 import ThesisAdvisorCommentsSection from './components/ThesisAdvisorCommentsSection/ThesisAdvisorCommentsSection'
 import ThesisStudentInfoSection from './components/ThesisStudentInfoSection/ThesisStudentInfoSection'
+import ThesisPresentationSection from './components/ThesisPresentationSection/ThesisPresentationSection'
 
 const ThesisPage = () => {
   const { thesisId } = useParams<{ thesisId: string }>()
@@ -27,6 +28,7 @@ const ThesisPage = () => {
         <ThesisInfoSection />
         <ThesisProposalSection />
         <ThesisWritingSection />
+        <ThesisPresentationSection />
         <ThesisAssessmentSection />
         <ThesisFinalGradeSection />
       </Stack>

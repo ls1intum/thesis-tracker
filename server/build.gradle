@@ -9,7 +9,7 @@ plugins {
 }
 
 group = "thesis.aet"
-version = "3.0.4"
+version = "3.0.5"
 description = "Thesis Management"
 
 java {
@@ -61,8 +61,8 @@ dependencies {
 		exclude group: "com.vaadin.external.google", module: "android-json"
 		exclude group: "org.xmlunit", module: "xmlunit-core"
 	}
-	testImplementation "org.mockito:mockito-core:5.14.2"
-	testImplementation "org.mockito:mockito-junit-jupiter:5.14.2"
+	testImplementation "org.mockito:mockito-core:5.15.2"
+	testImplementation "org.mockito:mockito-junit-jupiter:5.15.2"
 
 	testImplementation "org.testcontainers:testcontainers:${test_container_version}"
 	testImplementation "org.testcontainers:junit-jupiter:${test_container_version}"
