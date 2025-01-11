@@ -12,8 +12,8 @@ You can follow the steps in [deploy_docker.yml](../.github/workflows/deploy_dock
 ## Running Server
 Minimal docker configuration to start a server
 ```yaml
-image: "ghcr.io/ls1intum/thesis-track/thesis-track-server:latest"
-container_name: thesis-track-server
+image: "ghcr.io/ls1intum/thesis-management/thesis-management-server:latest"
+container_name: thesis-management-server
 labels:
   - "traefik.enable=true"
   - "traefik.http.routers.server.rule=Host(`${APP_HOSTNAME}`) && PathPrefix(`/api`)"
@@ -30,7 +30,7 @@ expose:
   - "8080"
 environment:
   - TZ=Europe/Berlin
-  - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/thesis-track
+  - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/thesis-management
   - SPRING_DATASOURCE_USERNAME=
   - SPRING_DATASOURCE_PASSWORD=
   - MAIL_ENABLED=true
@@ -49,8 +49,8 @@ environment:
 ## Running Client
 Minimal docker configuration to start the client
 ```yaml
-image: "ghcr.io/ls1intum/thesis-track/thesis-track-client:latest"
-container_name: thesis-track-client
+image: "ghcr.io/ls1intum/thesis-management/thesis-management-client:latest"
+container_name: thesis-management-client
 labels:
   - "traefik.enable=true"
   - "traefik.http.routers.client.rule=Host(`${APP_HOSTNAME}`)"
@@ -79,7 +79,7 @@ image: traefik:v3.2
 command:
   - "--providers.docker=true"
   - "--providers.docker.exposedByDefault=false"
-  - "--providers.docker.network=thesis-track-network"
+  - "--providers.docker.network=thesis-management-network"
   - "--entrypoints.web.address=:80"
   - "--entrypoints.websecure.address=:443"
   - "--entrypoints.web.http.redirections.entryPoint.to=websecure"
@@ -99,11 +99,11 @@ volumes:
 ## Backup Strategy
 There are 2 places that require backups:
 - The PostgreSQL database. The backup strategy depends on the database setup, but the whole public schema of the connected database should be included in the backup. 
-  - Example backup command: `pg_dump -U thesistrack --schema="public" thesistrack > backup_thesistrack.sql`
-  - Example import command: `psql -U thesistrack -d thesistrack -f backup_thesistrack.sql`
+  - Example backup command: `pg_dump -U thesismanagement --schema="public" thesismanagement > backup_thesismanagement.sql`
+  - Example import command: `psql -U thesismanagement -d thesismanagement -f backup_thesismanagement.sql`
 - The files stored at `/uploads`. In the docker example, these files are mounted to `./thesis_uploads` and backup system should collect the files from the mounted folder
 
-There is an example script [thesis-track-backup.sh](../thesis-track-backup.sh) that you can call in a cronjob to create regular backups.
+There is an example script [thesis-management-backup.sh](../thesis-management-backup.sh) that you can call in a cronjob to create regular backups.
 
 ## Further Configuration
 

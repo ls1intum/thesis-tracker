@@ -1,6 +1,6 @@
 {
   "id": "12de14fa-724f-4e74-98e7-0a27089abda0",
-  "realm": "thesis-track",
+  "realm": "thesis-management",
   "notBefore": 0,
   "defaultSignatureAlgorithm": "RS256",
   "revokeRefreshToken": false,
@@ -47,7 +47,7 @@
     "realm": [
       {
         "id": "c2042cd5-b3d8-4860-975b-5165623b099c",
-        "name": "default-roles-thesis-track",
+        "name": "default-roles-thesis-management",
         "description": "${role_default-roles}",
         "composite": true,
         "composites": {
@@ -299,7 +299,7 @@
         }
       ],
       "security-admin-console": [],
-      "thesis-track-app": [
+      "thesis-management-app": [
         {
           "id": "bc6dcfe5-250e-42e7-9eec-59de8eb25ba8",
           "name": "admin",
@@ -350,7 +350,7 @@
           "attributes": {}
         }
       ],
-      "thesis-track-service-client": [],
+      "thesis-management-service-client": [],
       "account": [
         {
           "id": "20a35168-0fdf-41fa-97c6-3a1c00769421",
@@ -449,7 +449,7 @@
       "attributes": {},
       "realmRoles": [],
       "clientRoles": {
-        "thesis-track-app": [
+        "thesis-management-app": [
           "student"
         ]
       },
@@ -458,7 +458,7 @@
   ],
   "defaultRole": {
     "id": "c2042cd5-b3d8-4860-975b-5165623b099c",
-    "name": "default-roles-thesis-track",
+    "name": "default-roles-thesis-management",
     "description": "${role_default-roles}",
     "composite": true,
     "clientRole": false,
@@ -507,15 +507,15 @@
     {
       "id": "7751d41a-a788-4f6b-9af9-b0b10ec91e98",
       "createdTimestamp": 1725225797997,
-      "username": "service-account-thesis-track-service-client",
+      "username": "service-account-thesis-management-service-client",
       "enabled": true,
       "totp": false,
       "emailVerified": false,
-      "serviceAccountClientId": "thesis-track-service-client",
+      "serviceAccountClientId": "thesis-management-service-client",
       "disableableCredentialTypes": [],
       "requiredActions": [],
       "realmRoles": [
-        "default-roles-thesis-track"
+        "default-roles-thesis-management"
       ],
       "clientRoles": {
         "realm-management": [
@@ -556,13 +556,13 @@
       "clientId": "account",
       "name": "${client_account}",
       "rootUrl": "${authBaseUrl}",
-      "baseUrl": "/realms/thesis-track/account/",
+      "baseUrl": "/realms/thesis-management/account/",
       "surrogateAuthRequired": false,
       "enabled": true,
       "alwaysDisplayInConsole": false,
       "clientAuthenticatorType": "client-secret",
       "redirectUris": [
-        "/realms/thesis-track/account/*"
+        "/realms/thesis-management/account/*"
       ],
       "webOrigins": [],
       "notBefore": 0,
@@ -600,13 +600,13 @@
       "clientId": "account-console",
       "name": "${client_account-console}",
       "rootUrl": "${authBaseUrl}",
-      "baseUrl": "/realms/thesis-track/account/",
+      "baseUrl": "/realms/thesis-management/account/",
       "surrogateAuthRequired": false,
       "enabled": true,
       "alwaysDisplayInConsole": false,
       "clientAuthenticatorType": "client-secret",
       "redirectUris": [
-        "/realms/thesis-track/account/*"
+        "/realms/thesis-management/account/*"
       ],
       "webOrigins": [],
       "notBefore": 0,
@@ -769,13 +769,13 @@
       "clientId": "security-admin-console",
       "name": "${client_security-admin-console}",
       "rootUrl": "${authAdminUrl}",
-      "baseUrl": "/admin/thesis-track/console/",
+      "baseUrl": "/admin/thesis-management/console/",
       "surrogateAuthRequired": false,
       "enabled": true,
       "alwaysDisplayInConsole": false,
       "clientAuthenticatorType": "client-secret",
       "redirectUris": [
-        "/admin/thesis-track/console/*"
+        "/admin/thesis-management/console/*"
       ],
       "webOrigins": [
         "+"
@@ -830,7 +830,7 @@
     },
     {
       "id": "6ad0df84-52d0-4a3e-b2f5-26bfd7aea7f2",
-      "clientId": "thesis-track-app",
+      "clientId": "thesis-management-app",
       "name": "",
       "description": "",
       "rootUrl": "",
@@ -882,7 +882,7 @@
     },
     {
       "id": "3652903b-9f7a-4e91-9b41-11dc4ac0bd8d",
-      "clientId": "thesis-track-service-client",
+      "clientId": "thesis-management-service-client",
       "name": "",
       "description": "",
       "rootUrl": "",

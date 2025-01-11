@@ -15,11 +15,11 @@ docker compose up keycloak -d
     * Username: `admin`
     * Password: `admin`
 3. Click on the drowdown in the top left and go to [Create realm](http://localhost:8081/admin/master/console/#/master/add-realm)
-4. Import the [keycloak-realm-config-example-json](/keycloak-realm-config-example.json) or create a new realm `thesis-track` manually.
-5. Select the newly created realm and create your user in [Users](http://localhost:8081/admin/master/console/#/thesis-track/users) (username, email, first name, last name)
+4. Import the [keycloak-realm-config-example-json](/keycloak-realm-config-example.json) or create a new realm `thesis-management` manually.
+5. Select the newly created realm and create your user in [Users](http://localhost:8081/admin/master/console/#/thesis-management/users) (username, email, first name, last name)
 6. Go to "Credentials" for the new user and set a non temporary password
 7. Go to "Role mapping" and assign the client roles `admin`, `supervisor`, `advisor` to the new user
-   * Select "Filter by clients" and search for "thesis-track-app" to find the roles
+   * Select "Filter by clients" and search for "thesis-management-app" to find the roles
 
 ## PostgreSQL Database
 
@@ -35,8 +35,8 @@ Notice: local development does not support mailing functionality. The mails are 
 ## Server
 
 ### Preconditions
-* Database available at `jdbc:postgresql://db:5144/thesis-track`
-* Keycloak realm `thesis-track` is available under http://localhost:8081 (See [Keycloak Setup](#keycloak-setup))
+* Database available at `jdbc:postgresql://db:5144/thesis-management`
+* Keycloak realm `thesis-management` is available under http://localhost:8081 (See [Keycloak Setup](#keycloak-setup))
 
 To start the sever application for local development, navigate to /server folder and execute the following command from the terminal:
 ```
@@ -49,7 +49,7 @@ Server is served at http://localhost:8080.
 
 #### Preconditions
 * Server running at http://localhost:8080
-* Keycloak realm `thesis-track` is available under http://localhost:8081 (See [Keycloak Setup](#keycloak-setup))
+* Keycloak realm `thesis-management` is available under http://localhost:8081 (See [Keycloak Setup](#keycloak-setup))
 
 To start the client application for local development, navigate to /client folder and execute the following command from the terminal:
 ```

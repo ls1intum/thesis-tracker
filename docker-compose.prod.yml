@@ -6,7 +6,7 @@ services:
     command:
       - "--providers.docker=true"
       - "--providers.docker.exposedByDefault=false"
-      - "--providers.docker.network=thesis-track-network"
+      - "--providers.docker.network=thesis-management-network"
       - "--entrypoints.web.address=:80"
       - "--entrypoints.websecure.address=:443"
       - "--entrypoints.web.http.redirections.entryPoint.to=websecure"
@@ -22,11 +22,11 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
       - ./letsencrypt:/letsencrypt
     networks:
-      - thesis-track-network
+      - thesis-management-network
 
   server:
-    image: "ghcr.io/ls1intum/thesis-track/thesis-track-server:${SERVER_IMAGE_TAG}"
-    container_name: thesis-track-server
+    image: "ghcr.io/ls1intum/thesis-management/thesis-management-server:${SERVER_IMAGE_TAG}"
+    container_name: thesis-management-server
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.server.rule=Host(`${APP_HOSTNAME}`) && PathPrefix(`/api`)"
@@ -77,11 +77,11 @@ services:
       - GIT_COMMIT
       - GIT_BRANCH
     networks:
-      - thesis-track-network
+      - thesis-management-network
 
   client:
-    image: "ghcr.io/ls1intum/thesis-track/thesis-track-client:${CLIENT_IMAGE_TAG}"
-    container_name: thesis-track-client
+    image: "ghcr.io/ls1intum/thesis-management/thesis-management-client:${CLIENT_IMAGE_TAG}"
+    container_name: thesis-management-client
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.client.rule=Host(`${APP_HOSTNAME}`)"
@@ -112,11 +112,11 @@ services:
     depends_on:
       - server
     networks:
-      - thesis-track-network
+      - thesis-management-network
 
   db:
     image: "postgres:17.1-alpine"
-    container_name: thesis-track-db
+    container_name: thesis-management-db
     environment:
       - POSTGRES_USER=${SPRING_DATASOURCE_USERNAME}
       - POSTGRES_PASSWORD=${SPRING_DATASOURCE_PASSWORD}
@@ -128,20 +128,20 @@ services:
       timeout: 5s
       retries: 5
     networks:
-      - thesis-track-network
+      - thesis-management-network
 
   postfix:
     image: ghcr.io/ls1admin/postfix:latest
-    container_name: thesis-track-postfix
+    container_name: thesis-management-postfix
     restart: unless-stopped
     volumes:
       - ./postfix-config:/config
     hostname: ${APP_HOSTNAME}
     networks:
-      - thesis-track-network
+      - thesis-management-network
 
 networks:
-  # Create network manually in advance: docker network create thesis-track-network
-  thesis-track-network:
-    name: thesis-track-network
+  # Create network manually in advance: docker network create thesis-management-network
+  thesis-management-network:
+    name: thesis-management-network
     external: true

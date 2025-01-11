@@ -1,15 +1,15 @@
 services:
   db:
     image: 'postgres:17.1-alpine'
-    container_name: thesis-track-db
+    container_name: thesis-management-db
     volumes:
       - ./db_backups:/db_backups
     environment:
-      - POSTGRES_USER=thesis-track-postgres
-      - POSTGRES_PASSWORD=thesis-track-postgres
-      - POSTGRES_DB=thesis-track
+      - POSTGRES_USER=thesis-management-postgres
+      - POSTGRES_PASSWORD=thesis-management-postgres
+      - POSTGRES_DB=thesis-management
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -d thesis-track -U thesis-track-postgres"]
+      test: ["CMD-SHELL", "pg_isready -d thesis-management -U thesis-management-postgres"]
       interval: 5s
       timeout: 5s
       retries: 5
@@ -18,7 +18,7 @@ services:
 
   #postfix:
   #  image: ghcr.io/ls1admin/postfix:latest
-  #  container_name: thesis-track-postfix
+  #  container_name: thesis-management-postfix
   #  restart: unless-stopped
   #  volumes:
   #    - ./postfix-config:/config # See https://github.com/ls1admin/postfix-container-tum-mailrelay/tree/main for details
@@ -28,13 +28,13 @@ services:
 
   caldav:
     image: tomsquest/docker-radicale:3.3.0.1
-    container_name: thesis-track-caldav
+    container_name: thesis-management-caldav
     ports:
       - "5232:5232"
 
   keycloak:
     image: quay.io/keycloak/keycloak:26.0
-    container_name: thesis-track-keycloak
+    container_name: thesis-management-keycloak
     environment:
       KEYCLOAK_ADMIN: admin
       KEYCLOAK_ADMIN_PASSWORD: admin

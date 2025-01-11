@@ -5,7 +5,7 @@ logging:
 
 spring:
   datasource:
-    url: jdbc:postgresql://unreachable:5432/thesis-track
+    url: jdbc:postgresql://unreachable:5432/thesis-management
     username: ""
     password: ""
     driver-class-name: org.postgresql.Driver
@@ -42,13 +42,13 @@ server:
   servlet:
     context-path: /api
 
-thesis-track:
+thesis-management:
   keycloak:
     host: http://unreachable:8081
-    realm-name: thesis-track
-    client-id: thesis-track-app
+    realm-name: thesis-management
+    client-id: thesis-management-app
     service-client:
-      id: thesis-track-service-client
+      id: thesis-management-service-client
       secret: ""
       student-group-name: thesis-students
   calendar:
