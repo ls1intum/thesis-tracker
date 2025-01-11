@@ -40,9 +40,9 @@ const AboutPage = () => {
   return (
     <PublicArea withBackButton={true}>
       <Stack>
-        <Title>ThesisTrack</Title>
+        <Title>ThesisManagement</Title>
         <Text>
-          ThesisTrack addresses inefficient manual thesis management processes at large universities
+          ThesisManagement addresses inefficient manual thesis management processes at large universities
           through a web-based platform. The system digitizes the entire lifecycle from student
           applications to final grading, serving three key stakeholders: supervisors (professors),
           advisors (doctoral candidates), and students. Key features include:
@@ -89,7 +89,7 @@ const AboutPage = () => {
         <Title order={3}>Features</Title>
         <Text>
           The following flowchart diagram provides a visual overview of the thesis processes
-          implemented in ThesisTrack. These diagram illustrates the step-by-step workflows involved,
+          implemented in ThesisManagement. These diagram illustrates the step-by-step workflows involved,
           from thesis topic selection and application submission to the final grading and completion
           stages. It highlights key actions, decision points, and interactions between students,
           advisors, and supervisors, clarifying how tasks are sequenced and managed within the

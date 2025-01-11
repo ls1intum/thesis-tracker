@@ -5,9 +5,9 @@ logging:
 
 spring:
   datasource:
-    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5144/thesis-track}
-    username: ${SPRING_DATASOURCE_USERNAME:thesis-track-postgres}
-    password: ${SPRING_DATASOURCE_PASSWORD:thesis-track-postgres}
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5144/thesis-management}
+    username: ${SPRING_DATASOURCE_USERNAME:thesis-management-postgres}
+    password: ${SPRING_DATASOURCE_PASSWORD:thesis-management-postgres}
     driver-class-name: org.postgresql.Driver
   liquibase:
     enabled: true
@@ -32,16 +32,16 @@ spring:
       client:
         registration:
           keycloak:
-            client-id: ${KEYCLOAK_CLIENT_ID:thesis-track-app}
+            client-id: ${KEYCLOAK_CLIENT_ID:thesis-management-app}
             scope: openid
         provider:
           keycloak:
-            issuer-uri: ${KEYCLOAK_HOST:http://localhost:8081}/realms/${KEYCLOAK_REALM_NAME:thesis-track}
+            issuer-uri: ${KEYCLOAK_HOST:http://localhost:8081}/realms/${KEYCLOAK_REALM_NAME:thesis-management}
             user-name-attribute: preferred_username
       resourceserver:
         jwt:
-          jwk-set-uri: ${KEYCLOAK_HOST:http://localhost:8081}/realms/${KEYCLOAK_REALM_NAME:thesis-track}/protocol/openid-connect/certs
-          issuer-uri: ${KEYCLOAK_HOST:http://localhost:8081}/realms/${KEYCLOAK_REALM_NAME:thesis-track}
+          jwk-set-uri: ${KEYCLOAK_HOST:http://localhost:8081}/realms/${KEYCLOAK_REALM_NAME:thesis-management}/protocol/openid-connect/certs
+          issuer-uri: ${KEYCLOAK_HOST:http://localhost:8081}/realms/${KEYCLOAK_REALM_NAME:thesis-management}
   mail:
     host: ${POSTFIX_HOST:localhost}
     port: ${POSTFIX_PORT:25}
@@ -73,13 +73,13 @@ server:
   servlet:
     context-path: /api
 
-thesis-track:
+thesis-management:
   keycloak:
     host: ${KEYCLOAK_HOST:http://localhost:8081}
-    realm-name: ${KEYCLOAK_REALM_NAME:thesis-track}
-    client-id: ${KEYCLOAK_CLIENT_ID:thesis-track-app}
+    realm-name: ${KEYCLOAK_REALM_NAME:thesis-management}
+    client-id: ${KEYCLOAK_CLIENT_ID:thesis-management-app}
     service-client:
-      id: ${KEYCLOAK_SERVICE_CLIENT_ID:thesis-track-service-client}
+      id: ${KEYCLOAK_SERVICE_CLIENT_ID:thesis-management-service-client}
       secret: ${KEYCLOAK_SERVICE_CLIENT_SECRET:}
       student-group-name: ${KEYCLOAK_SERVICE_STUDENT_GROUP_NAME:thesis-students}
   calendar:
