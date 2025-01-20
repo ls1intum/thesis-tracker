@@ -40,7 +40,7 @@ dependencies {
 		}
 	}
 
-	implementation "org.liquibase:liquibase-core:4.30.0"
+	implementation "org.liquibase:liquibase-core:4.31.0"
 	implementation "org.postgresql:postgresql"
 
 	implementation "commons-io:commons-io:2.18.0"
